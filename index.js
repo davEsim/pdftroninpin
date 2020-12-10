@@ -185,4 +185,4 @@ http.createServer(function (req, res) {
     res.write('Poznámka: odeslání formuláře může chvíli trvat vzhledem k velikosti a počtu nahrávaných souborů.');
     return res.end();
   }
-}).listen(80);
+}).listen(8088);
