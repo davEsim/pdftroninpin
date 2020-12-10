@@ -1,0 +1,18 @@
+{
+  "name": "pdfPortfolio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pdftron/pdfnet-node": "^7.1.1-1",
+    "formidable": "^1.2.2",
+    "fs-extra": "^9.0.1",
+    "path": "^0.12.7"
+  }
+}
