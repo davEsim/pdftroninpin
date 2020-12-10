@@ -14,5 +14,8 @@
     "formidable": "^1.2.2",
     "fs-extra": "^9.0.1",
     "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "10.16"
   }
 }
