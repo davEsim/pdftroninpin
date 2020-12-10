@@ -3,9 +3,9 @@
 //var fs = require('fs-extra');
 //var path = require('path'); 
 
-const input_path = path.dirname(__filename) + "/_sourceFiles/";
+//const input_path = path.dirname(__filename) + "/_sourceFiles/";
 const input_link ="../_sourceFiles/";
-const rel_path = path.parse;
+//const rel_path = path.parse;
 
 console.log("je to o.k.");
 
