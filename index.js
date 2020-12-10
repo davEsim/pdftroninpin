@@ -1,7 +1,7 @@
-var http = require('http');
-var formidable = require('formidable');
-var fs = require('fs-extra');
-var path = require('path'); 
+//var http = require('http');
+//var formidable = require('formidable');
+//var fs = require('fs-extra');
+//var path = require('path'); 
 
 const input_path = path.dirname(__filename) + "/_sourceFiles/";
 const input_link ="../_sourceFiles/";
