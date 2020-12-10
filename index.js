@@ -7,7 +7,7 @@
 const input_link ="../_sourceFiles/";
 //const rel_path = path.parse;
 
-console.log("je to o.k.");
+console.log("je to o.k." + input_link);
 
 /*
 http.createServer(function (req, res) {
