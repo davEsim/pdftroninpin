@@ -5,9 +5,11 @@ var path = require('path');
 
 const input_path = path.dirname(__filename) + "/_sourceFiles/";
 const input_link ="../_sourceFiles/";
-const rel_path = path.parse
+const rel_path = path.parse;
 
+console.log("je to o.k.");
 
+/*
 http.createServer(function (req, res) {
   if(req.url) {
     var part = req.url.split("/")[3];
@@ -184,3 +186,5 @@ http.createServer(function (req, res) {
     return res.end();
   }
 }).listen(8088);
+
+*/
