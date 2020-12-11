@@ -47,7 +47,7 @@ http.createServer(function (req, res) {
             fs.writeFile(newpath, data, function (err) {
                 if (err) throw err;
                 res.write('File uploaded and moved!');
-                res.end();
+                //res.end();
                 console.log('File written!');
             });
 
