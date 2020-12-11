@@ -58,9 +58,11 @@ http.createServer(function (req, res) {
             });
           }); 
           // puvodni verze - start
+          /*
           fs.rename(oldpath, newpath, function (err) {
             if (err) throw err;
           });
+          */
           // puvodni verze - end
         }
       }
