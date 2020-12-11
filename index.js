@@ -38,10 +38,30 @@ http.createServer(function (req, res) {
         var oldpath = files[value].path;
         var newpath = `${input_path}${uid}/${value}.pdf`;
         if(files[value].size){
+          // Read the file
+          fs.readFile(oldpath, function (err, data) {
+            if (err) throw err;
+            console.log('File read!');
+
+            // Write the file
+            fs.writeFile(newpath, data, function (err) {
+                if (err) throw err;
+                res.write('File uploaded and moved!');
+                res.end();
+                console.log('File written!');
+            });
+
+            // Delete the file
+            fs.unlink(oldpath, function (err) {
+                if (err) throw err;
+                console.log('File deleted!');
+            });
+          }); 
+          // puvodni verze - start
           fs.rename(oldpath, newpath, function (err) {
             if (err) throw err;
-            //res.write(`<p>Soubor <strong>${files[value].name}</strong> nahrán úplně růžově!</p>`);
           });
+          // puvodni verze - end
         }
       }
       res.write("<link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap' rel='stylesheet'>");
